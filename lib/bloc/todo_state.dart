@@ -9,8 +9,7 @@ class ToDoListEmptyState extends ToDoListState {}
 
 class ToDoListLoadedState extends ToDoListState {
   List<ToDoList> loadedToDoList;
-  List<Users> loadedUsersList;
-  ToDoListLoadedState({this.loadedToDoList, this.loadedUsersList}) : assert(loadedToDoList != null && loadedUsersList != null);
+  ToDoListLoadedState({required this.loadedToDoList}) : assert(loadedToDoList != null);
 }
 
 class ToDoListErrorState extends ToDoListState {}

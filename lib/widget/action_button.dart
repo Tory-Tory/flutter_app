@@ -5,6 +5,8 @@ import 'package:flutter_app/bloc/todo_list_bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ActionButtons extends StatelessWidget {
+  const ActionButtons({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     final ToDoListBloc toDoListBloc = BlocProvider.of<ToDoListBloc>(context);
